@@ -7,7 +7,7 @@ Napi::Value Method(const Napi::CallbackInfo& info) {
 
 void Init(Napi::Env env, Napi::Object exports, Napi::Object module) {
   exports.Set(Napi::String::New(env, "hello"),
-               Napi::Function::New(env, Method));
+              Napi::Function::New(env, Method));
 }
 
 NODE_API_MODULE(hello, Init)
